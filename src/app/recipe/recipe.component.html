@@ -1,0 +1,14 @@
+<div *ngIf="recipe" class="recipe-detail">
+  <img [src]="recipe.image" alt="{{ recipe.name }}">
+  <h2>{{ recipe.name }}</h2>
+
+  <h3>Ingredientes</h3>
+  <ul>
+    <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+  </ul>
+
+  <h3>Modo de Preparo</h3>
+  <p>{{ recipe.instructions }}</p>
+
+  <a routerLink="/">⬅ Voltar</a>
+</div>
