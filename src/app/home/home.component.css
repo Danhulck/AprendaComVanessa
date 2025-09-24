@@ -2,29 +2,47 @@
 h3{
   font-family: "Archivo", sans-serif;
 }
-
+/* Lista de receitas */
 .recipes-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  margin: 20px;
+  justify-content: center;
 }
 
-.recipe-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  text-align: center;
-  transition: transform 0.2s;
+/* Card estilo book */
+.book {
+  position: relative;
+  width: 220px;
+  height: 300px;
+  perspective: 2000px;
+  border-radius: 10px;
 }
 
-.recipe-card:hover {
-  transform: scale(1.03);
+.book .cover, .book .ingredients {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 12px rgba(0,0,0,0.3);
+  transition: transform 0.6s;
 }
 
-.recipe-card img {
+/* Frente do card */
+.book .cover {
+  background-color: #ffeee1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Imagem e nome da receita */
+.book .cover img {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -32,44 +50,44 @@ h3{
   margin-bottom: 10px;
 }
 
-/* --- BOTÃO INTEGRADO À PALETA --- */
-button {
-  position: relative;
-  overflow: hidden;
-  border: none;
-  border-radius: 50px; /* arredondado */
-  background: #ffeee1; /* fundo inicial claro */
-  color: #ff70aa; /* texto rosa inicial */
-  padding: 10px 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.4s ease;
+.book .cover h3 {
+  color: #FF70AA;
+  margin: 0;
+  text-align: center;
 }
-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(
-    82.3deg,
-    #ff8865 10.8%,
-    /* laranja */ #ff70aa 94.3% /* rosa */
-  );
-  transform: skewX(45deg);
-  z-index: -1;
-  transition: all 0.5s;
-  border-radius: 50px;
-}
-button:hover::before {
-  left: 0; /* anima o gradiente cobrindo o botão */
-} /* Hover: gradiente rosa → laranja + texto branco */
-button:hover {
-  background: linear-gradient(
-    82.3deg,
-    #ff70aa 10.8%,
-    /* rosa vibrante */ #ff8865 94.3% /* laranja/salmão */
-  );
+
+/* Verso do card */
+.book .ingredients {
+  background-color: #FF8865; /* cor de destaque */
+  transform: rotateY(180deg);
   color: #fff;
+  padding: 10px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+/* Mostrar verso no hover */
+.book:hover .cover {
+  transform: rotateY(-180deg);
+}
+
+.book:hover .ingredients {
+  transform: rotateY(0deg);
+}
+
+/* Lista de ingredientes */
+.book .ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.book .ingredients li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Botão no verso */
+.book .ingredients .btn {
+  margin-top: 10px;
 }
