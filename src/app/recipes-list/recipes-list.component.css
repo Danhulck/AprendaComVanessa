@@ -1,0 +1,92 @@
+.recipes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book {
+  position: relative;
+  width: 220px;
+  height: 300px;
+  perspective: 2000px;
+  border-radius: 10px;
+}
+
+.book .cover, .book .ingredients {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 12px rgba(0,0,0,0.3);
+  transition: transform 0.6s;
+}
+
+/* Frente */
+.book .cover {
+  background-color: #ffeee1;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.book .cover img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.book .cover .recipe-name {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #FF70AA;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Verso */
+.book .ingredients {
+  background-color: #FF8865;
+  transform: rotateY(180deg);
+  color: #fff;
+  padding: 10px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+/* Hover */
+.book:hover .cover {
+  transform: rotateY(-180deg);
+}
+
+.book:hover .ingredients {
+  transform: rotateY(0deg);
+}
+
+.book .ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.book .ingredients li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.book .ingredients .btn {
+  margin-top: 10px;
+}

@@ -1,0 +1,19 @@
+<div class="recipes-list">
+  <ng-container *ngFor="let recipe of recipes">
+    <div class="book">
+      <!-- Frente do card -->
+      <div class="cover">
+        <img [src]="recipe.image" alt="{{ recipe.name }}">
+        <div class="recipe-name">{{ recipe.name }}</div>
+      </div>
+      <!-- Verso do card -->
+      <div class="ingredients">
+        <h4>Ingredientes</h4>
+        <ul>
+          <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+        </ul>
+        <a class="btn" [routerLink]="['/recipe', recipe.id]">Ver Receita</a>
+      </div>
+    </div>
+  </ng-container>
+</div>
