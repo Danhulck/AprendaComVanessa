@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+h3{
+  font-family: "Archivo", sans-serif;
+}
+
 .recipes-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -9,7 +14,7 @@
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 16px;
   text-align: center;
   transition: transform 0.2s;
@@ -27,15 +32,44 @@
   margin-bottom: 10px;
 }
 
+/* --- BOTÃO INTEGRADO À PALETA --- */
 button {
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
+  position: relative;
+  overflow: hidden;
   border: none;
-  border-radius: 6px;
+  border-radius: 50px; /* arredondado */
+  background: #ffeee1; /* fundo inicial claro */
+  color: #ff70aa; /* texto rosa inicial */
+  padding: 10px 25px;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    82.3deg,
+    #ff8865 10.8%,
+    /* laranja */ #ff70aa 94.3% /* rosa */
+  );
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: all 0.5s;
+  border-radius: 50px;
+}
+button:hover::before {
+  left: 0; /* anima o gradiente cobrindo o botão */
+} /* Hover: gradiente rosa → laranja + texto branco */
 button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(
+    82.3deg,
+    #ff70aa 10.8%,
+    /* rosa vibrante */ #ff8865 94.3% /* laranja/salmão */
+  );
+  color: #fff;
 }

@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { RecipeService, Recipe } from '../recipe.service';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-recipe',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './recipe.component.html',
   styleUrls: ['./recipe.component.css']
 })
