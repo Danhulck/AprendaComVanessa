@@ -22,7 +22,7 @@ export class RecipeService {
       ingredients: ['3 ovos', '1 xícara de açúcar', '2 xícaras de farinha de trigo', '1 xícara de chocolate em pó', '1/2 xícara de óleo', '1 xícara de água quente', '1 colher de sopa de fermento em pó'],
       instructions: 'Em uma tigela, bata os ovos com o açúcar até obter um creme claro. Adicione o óleo e misture. Peneire a farinha e o chocolate em pó, adicionando à mistura alternadamente com a água quente. Por último, incorpore o fermento. Despeje em uma forma untada e enfarinhada e asse em forno pré-aquecido a 180°C por cerca de 40 minutos.',
       flavor: 'Doce',
-      image: 'https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg'
+      image: 'assets/img/bolo-de-chocolate.png'
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export class RecipeService {
       ingredients: ['500g de macarrão', '500g de carne moída', '1 cebola picada', '2 dentes de alho picados', '800g de tomate pelado', 'Sal e pimenta a gosto', 'Azeite', 'Queijo parmesão ralado'],
       instructions: 'Em uma panela, aqueça o azeite e refogue a cebola e o alho. Adicione a carne moída e cozinhe até dourar. Junte o tomate pelado, tempere com sal e pimenta e deixe cozinhar em fogo baixo por cerca de 30 minutos. Cozinhe o macarrão conforme as instruções da embalagem. Sirva o macarrão com o molho bolonhesa por cima e queijo parmesão.',
       flavor: 'Salgado',
-      image: 'https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg'
+      image: 'assets/img/macarrao-a-bolonhesa.png'
     },
     {
       id: 3,
