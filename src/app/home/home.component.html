@@ -1,17 +1,3 @@
-<div class="recipes-list">
-  <div *ngFor="let recipe of recipes" class="book">
-    <!-- Frente do card -->
-    <div class="cover">
-      <img [src]="recipe.image" alt="{{ recipe.name }}">
-      <h3>{{ recipe.name }}</h3>
-    </div>
-    <!-- Verso do card (ingredientes) -->
-    <div class="ingredients">
-      <h4>Ingredientes</h4>
-      <ul>
-        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
-      </ul>
-      <a class="btn" [routerLink]="['/recipe', recipe.id]">Ver Receita</a>
-    </div>
-  </div>
-</div>
+<main>
+  <app-recipes-list></app-recipes-list>
+</main>

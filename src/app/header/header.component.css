@@ -5,7 +5,13 @@ header {
   justify-content: center;
   background: #FF8865;
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;   /* fixa no topo */
+  top: 0;            /* encosta no topo */
+  left: 0;
+  z-index: 1000;     /* garante que fica acima do conteúdo */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* sombra inferior */
 }
 
 nav {
@@ -33,7 +39,7 @@ nav a {
   cursor: pointer;
   border: none;
   font-weight: 500;
-  z-index: 0; /* importante para o ::before ficar atrás */
+  z-index: 0;
 }
 
 .button:hover::before {
@@ -56,11 +62,11 @@ nav a {
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.475s;
-  z-index: -1; /* sempre atrás do texto */
+  z-index: -1;
 }
 
 /* Ativo (rota atual) */
 nav a.active {
   font-weight: bold;
-  border-bottom: 2px solid #FF70AA; 
+  border-bottom: 2px solid #FF70AA;
 }

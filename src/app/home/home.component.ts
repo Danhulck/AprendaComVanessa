@@ -1,23 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { RecipeService, Recipe } from '../recipe.service';
+import { RecipesListComponent } from '../recipes-list/recipes-list.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, RecipesListComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
-  recipes: Recipe[] = [];  // 👈 agora existe
+export class HomeComponent {
 
-  constructor(private recipeService: RecipeService) {}
-
-  ngOnInit(): void {
-    this.recipeService.getAllRecipes().subscribe(data => {
-      this.recipes = data;
-    });
-  }
 }
