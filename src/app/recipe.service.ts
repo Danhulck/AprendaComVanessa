@@ -150,7 +150,7 @@ export class RecipeService {
       ingredients: ['1 disco de massa para pizza', '1/2 xícara de molho de tomate', '200g de queijo muçarela de búfala ou comum', 'Tomates cereja cortados ao meio', 'Folhas de manjericão fresco', 'Azeite extra virgem', 'Orégano e sal a gosto'],
       instructions: 'Pré-aqueça o forno na temperatura máxima. Abra a massa em uma forma. Espalhe o molho de tomate sobre a massa, deixando uma borda. Distribua o queijo muçarela, os tomates cereja e tempere com sal e orégano. Regue com um fio de azeite. Leve ao forno por 10-15 minutos ou até a massa estar crocante e o queijo derretido. Retire do forno e finalize com folhas de manjericão fresco.',
       flavor: 'Salgado',
-      image: 'assets/img/pizza-marguerita.png'
+      image: 'assets/img/pizza-margherita.png'
     },
     {
       id: 18,
