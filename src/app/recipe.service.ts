@@ -198,7 +198,7 @@ export class RecipeService {
       ingredients: ['1 xícara de flocão de milho', '1/2 xícara de água', 'Sal a gosto', '2 ovos', 'Manteiga de garrafa ou comum'],
       instructions: 'Em uma tigela, umedeça o flocão de milho com a água e o sal. Deixe hidratar por 10 minutos. Coloque a massa na cuscuzeira e cozinhe no vapor por cerca de 15 minutos. Enquanto isso, frite os ovos em uma frigideira com manteiga. Sirva o cuscuz quente com os ovos fritos por cima e um pouco mais de manteiga derretida.',
       flavor: 'Salgado',
-      image: 'assets/img/cuscuz-ovo.png'
+      image: 'assets/img/cuzcuz-ovo.png'
     },
     {
       id: 24,
@@ -230,7 +230,7 @@ export class RecipeService {
       ingredients: ['5 batatas grandes fatiadas finamente', '1 lata de creme de leite', '200g de queijo muçarela ralado', '100g de queijo parmesão ralado', 'Sal, pimenta do reino e noz-moscada a gosto'],
       instructions: 'Pré-aqueça o forno a 200°C. Em um refratário untado, faça uma camada com metade das batatas fatiadas. Tempere com sal, pimenta e noz-moscada. Espalhe metade do creme de leite e metade do queijo muçarela. Repita as camadas. Finalize com o queijo parmesão ralado por cima. Cubra com papel alumínio e asse por 30 minutos. Retire o papel e asse por mais 20 minutos ou até dourar.',
       flavor: 'Salgado',
-      image: 'assets/img/'
+      image: 'assets/img/batata-gratinada.png'
     },
     {
       id: 28,
@@ -238,7 +238,7 @@ export class RecipeService {
       ingredients: ['2 abacates maduros amassados', '1 tomate sem sementes picado', '1/2 cebola roxa picada', 'Suco de 1 limão', 'Coentro picado a gosto', 'Sal e pimenta do reino'],
       instructions: 'Em uma tigela, amasse os abacates com um garfo, deixando alguns pedaços. Adicione a cebola, o tomate, o coentro e o suco de limão. Misture bem. Tempere com sal e pimenta a gosto. Sirva imediatamente com nachos ou torradas.',
       flavor: 'Salgado',
-      image: 'https://images.pexels.com/photos/4062276/pexels-photo-4062276.jpeg'
+      image: 'assets/img/guacamole.png'
     },
     {
       id: 29,
@@ -246,7 +246,7 @@ export class RecipeService {
       ingredients: ['200g de chocolate meio amargo picado', '100g de manteiga sem sal', '1 xícara de açúcar', '2 ovos', '1/2 xícara de farinha de trigo', '1/2 xícara de nozes picadas (opcional)'],
       instructions: 'Derreta o chocolate com a manteiga em banho-maria ou no micro-ondas. Em uma tigela, bata os ovos com o açúcar até obter um creme claro. Incorpore a mistura de chocolate derretido. Adicione a farinha e as nozes, misturando delicadamente. Despeje em uma forma quadrada forrada com papel manteiga. Asse em forno pré-aquecido a 180°C por 25-30 minutos (o interior deve ficar úmido).',
       flavor: 'Doce',
-      image: 'https://images.pexels.com/photos/4449068/pexels-photo-4449068.jpeg'
+      image: 'assets/img/brownie-chocolate.png'
     },
     {
       id: 30,
@@ -254,7 +254,7 @@ export class RecipeService {
       ingredients: ['1 limão taiti', '2 colheres de sopa de açúcar', '60ml de cachaça', 'Gelo a gosto'],
       instructions: 'Corte o limão em 8 pedaços, retirando a parte branca do meio. Em um copo baixo, macere os pedaços de limão com o açúcar. Adicione a cachaça e o gelo. Mexa bem ou use uma coqueteleira para misturar. Sirva imediatamente.',
       flavor: 'Doce',
-      image: 'https://images.pexels.com/photos/4038850/pexels-photo-4038850.jpeg'
+      image: 'assets/img/Caipirinha.png'
     },
     // --- Receitas Bônus Locais (Salvador/BA) ---
     {
@@ -262,8 +262,8 @@ export class RecipeService {
       name: 'Acarajé',
       ingredients: ['500g de feijão fradinho', '1 cebola grande', 'Sal a gosto', 'Azeite de dendê para fritar', 'Vatapá e camarão seco para rechear'],
       instructions: 'Deixe o feijão de molho de um dia para o outro. Descasque o feijão e bata no liquidificador com a cebola até formar uma massa homogênea. Tempere com sal. Bata a massa com uma colher de pau para incorporar ar e deixá-la fofa. Com uma colher, modele os bolinhos e frite em azeite de dendê quente. Sirva quente com vatapá, camarão seco e salada (pimenta opcional).',
-      flavor: 'Salgado e Picante',
-      image: 'https://images.pexels.com/photos/5630656/pexels-photo-5630656.jpeg'
+      flavor: 'Salgado',
+      image: 'assets/img/acaraje.png'
     },
     {
       id: 32,
@@ -271,7 +271,7 @@ export class RecipeService {
       ingredients: ['250g de pão francês amanhecido', '500ml de leite de coco', '100g de camarão seco', '50g de castanha de caju', '1 cebola', 'Gengibre ralado a gosto', 'Azeite de dendê', 'Sal e pimenta'],
       instructions: 'Amoleça o pão no leite de coco. Bata no liquidificador com o camarão seco, a castanha, a cebola e o gengibre até virar um creme. Leve ao fogo em uma panela, adicione azeite de dendê a gosto e cozinhe, mexendo sempre, até engrossar e desgrudar do fundo da panela. Tempere com sal e pimenta.',
       flavor: 'Salgado',
-      image: 'https://images.pexels.com/photos/17651347/pexels-photo-17651347.jpeg'
+      image: 'assets/img/vatapa-bahiano.png'
     }
   ];
 
